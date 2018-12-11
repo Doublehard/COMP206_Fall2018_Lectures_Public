@@ -15,7 +15,7 @@
 int main()
 {
 	int a = 257;
-	char *p = &a;
+	char *p = (char*)&a;
 
 	printf( "The value at p is %d.\n", *p );
 	printf( "The value at p+1 is %d.\n", *(p+1) );
